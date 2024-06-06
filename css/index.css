@@ -6,6 +6,9 @@
 
 body {
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;  /*my*/
 }
 
 .container {
@@ -33,7 +36,7 @@ section,
 }
 
 #footer {
-    background-color: #c0b5aa;
+    background-color: #ffff;
     height: 50px;
     color: #fff;
     font-size: 20vh;
@@ -55,12 +58,12 @@ section,
 
 
 #img-one {
-    background-image: url(../img/lv2.JPG);
+    background-image: url(../img/lv1.JPG);
     background-size: cover;
 }
 
 #img-two {
-    background-image: url(../img/lv1.JPG);
+    background-image: url(../img/lv2.JPG);
 }
 
 .content-one {
@@ -79,8 +82,8 @@ section,
 }
 
 .text-box {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 50%;
     /* 绝对定位 */
     position: absolute;
     bottom: 25%;
@@ -143,26 +146,40 @@ section,
 
 #myNav{
     position: fixed;
-    width: 100%;
-    height: 10%;
+    width: 100vw;
+    height: 9vh;
     background-color: #fff;
     position: fixed;
     z-index: 999;
+    
+}
+#myNav ul{
+    text-align: center;
+    margin: 0 2rem;
 }
 
+#myNav ul .home{
+    float: left;
+}
+#myNav ul .contact{
+    float: right;
+}
+
+#myNav ul li{
+    line-height: 10vh;
+    display: inline;
+}
 #myNav .logo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2em;
-    text-align: center;
-    line-height: 10vh;
+    font-size: 1.6rem;
     letter-spacing: 5px;
+    line-height: 10vh;
 }
 
 #myNav .contact{
+    font-size: .8rem;
     text-decoration: none;
     color: #000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    float: right;
-    padding-right: 30px;
     line-height: 10vh;
 }
