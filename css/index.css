@@ -55,32 +55,32 @@ section,
 
 
 #img-one {
-    background-image: url(./img/lv2.JPG);
+    background-image: url(../img/lv2.JPG);
     background-size: cover;
 }
 
 #img-two {
-    background-image: url(./img/lv1.JPG);
+    background-image: url(../img/lv1.JPG);
 }
 
 .content-one {
-    background: url(./img/巴黎世家竖.png) no-repeat fixed center;
+    background: url(../img/巴黎世家竖.png) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-two {
-    background: url(./img/lv3.png) no-repeat fixed center;
+    background: url(../img/lv3.png) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-three {
-    background: url(./img/巴黎世家竖.png) no-repeat fixed center;
+    background: url(../img/巴黎世家竖.png) no-repeat fixed center;
     background-size: cover;
 }
 
 .text-box {
-    width: 100%;
-    height: 50%;
+    width: 100vw;
+    height: 50vh;
     /* 绝对定位 */
     position: absolute;
     bottom: 25%;
@@ -143,8 +143,8 @@ section,
 
 #myNav{
     position: fixed;
-    width: 1903px;
-    height: 10vh;
+    width: 100%;
+    height: 10%;
     background-color: #fff;
     position: fixed;
     z-index: 999;
