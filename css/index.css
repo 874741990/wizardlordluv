@@ -14,25 +14,30 @@ body {
 .container {
     width: 100vw;
     height: auto;
+    letter-spacing: 1px;
 }
 
 section,
 #footer {
     height: 100vh;
     position: relative;
-    color: rgba(255, 255, 255, .8);
+    color: #fff;
     font-size: 10vh;
     /* 设置字体 */
     font-family: 'modern_no._20regular',
         serif;
     /* 文字阴影 */
-    text-shadow: 4px 4px rgb(46, 43, 43);
+    /* text-shadow: 4px 4px rgb(46, 43, 43); */
     /* 弹性布局 */
     display: flex;
     /* 水平居中 */
     justify-content: center;
     /* 垂直居中 */
     align-items: center;
+}
+section h2,p{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1.5px;
 }
 
 #footer {
@@ -57,27 +62,29 @@ section,
 }
 
 
-#img-one {
+/* #img-one {
     background-image: url(../img/lv1.JPG);
     background-size: cover;
-}
+} */
 
 #img-two {
-    background-image: url(../img/lv2.JPG);
+    background-image: url(../img/巴黎世家竖.png);
+    font-size: 5vh;
+    text-align: center;
 }
 
 .content-one {
-    background: url(../img/巴黎世家竖.png) no-repeat fixed center;
+    background: url(../img/巴黎世家.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-two {
-    background: url(../img/lv3.png) no-repeat fixed center;
+    background: url(../img/lv.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
 .content-three {
-    background: url(../img/巴黎世家竖.png) no-repeat fixed center;
+    background: url(../img/巴黎世家2.jpg) no-repeat fixed center;
     background-size: cover;
 }
 
@@ -147,16 +154,18 @@ section,
 #myNav{
     position: fixed;
     width: 100vw;
-    height: 9vh;
+    height: 8vh;
     background-color: #fff;
     position: fixed;
     z-index: 999;
-    
+    font-size: .8rem;
 }
 #myNav ul{
     text-align: center;
-    margin: 0 1.2rem;
+    margin: 0 1.7rem;
+    line-height: 8vh;
 }
+
 
 #myNav ul .home{
     float: left;
@@ -166,20 +175,33 @@ section,
 }
 
 #myNav ul li{
-    line-height: 10vh;
     display: inline;
 }
 #myNav .logo{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1.6rem;
     letter-spacing: 5px;
-    line-height: 10vh;
+    line-height: 8vh;
 }
 
-#myNav .contact{
+/* #myNav .contact{
     font-size: .8rem;
     text-decoration: none;
     color: #000;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 10vh;
-}
+} */
+
+
+
+.video-background {
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto;
+    z-index: -1; /* 确保视频在其他内容下方 */
+    background-size: cover; /* 确保视频覆盖整个页面 */
+  }
